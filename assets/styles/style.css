@@ -260,13 +260,13 @@ input:focus {
   .navbar__logo .logo {
     text-align: right;
     float: left;
-    width: 35%;
+    width: 10%;
   }
 
   .navbar__logo h1 {
     text-align: left;
     float: right;
-    width: 65%;
+    width: 89%;
   }
 }
 

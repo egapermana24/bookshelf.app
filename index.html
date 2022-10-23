@@ -14,9 +14,16 @@
   </head>
   <body>
     <script>
-      // menampilakn prompt nama
-      const name = prompt("Masukkan nama kamu");
-      alert(`Selamat datang ${name}, sudahkah kamu membaca buku hari ini?`);
+      // menampilakn prompt dan alert hanya saat pertama kali membuka halaman
+      if (localStorage.getItem("firstTime") === null) {
+        localStorage.setItem("firstTime", "false");
+        prompt("Masukkan nama Kamu");
+        alert(
+          "Selamat datang, " +
+            localStorage.getItem("name") +
+            "apakah kamu sudah membaca buku ini?"
+        );
+      }
     </script>
     <!-- navbar -->
     <nav class="navbar">
