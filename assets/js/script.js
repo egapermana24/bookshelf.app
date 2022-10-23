@@ -121,7 +121,7 @@ function createBook(bookObject) {
   } else {
     const completeButton = document.createElement("button");
     completeButton.classList.add("green");
-    completeButton.innerText = "Selesai Baca";
+    completeButton.innerText = "Selesai dibaca";
 
     completeButton.addEventListener("click", function () {
       bookCompleteHandler(bookObject.id);
@@ -155,24 +155,21 @@ function createBook(bookObject) {
 
 // fungsi edit book melalui prompt
 function editBook(bookId) {
-  const book = findBook(bookId);
+  alert(
+    "Jika ingin mengubah salah satu atau semua data silahkan untuk selalu menekan tombol OK! "
+  );
 
+  const book = findBook(bookId);
   const title = prompt("Edit Judul Buku", book.title);
   const author = prompt("Edit Nama Penulis", book.author);
   const year = prompt("Edit Tahun Terbit", book.year);
-  // mengambil nilai dari local storage jika prompt kosong
-  if (title == null || title == "" || title == undefined) {
-    title = book.title;
-  }
-  if (author == null || author == "" || author == undefined) {
-    author = book.author;
-  }
-  // jika year tidak sama dengan angka maka akan memberikan alert
-  if (year == null || year == "" || year == undefined) {
-    year = book.year;
-  } else if (isNaN(year) || year.length > 4 || year.length < 4) {
-    alert("Tahun harus berupa angka dan 4 digit");
-    return editBook(bookId);
+  if (title == null || author == null || year == null) {
+    return;
+  } else if (title == "" || author == "" || year == "") {
+    return;
+  } else if (isNaN(year) || year.length > 4) {
+    alert("Tahun harus angka dan hanya boleh 4 digit");
+    return;
   } else {
     book.title = title;
     book.author = author;
