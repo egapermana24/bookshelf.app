@@ -13,18 +13,6 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
-    <script>
-      // menampilakn prompt dan alert hanya saat pertama kali membuka halaman
-      if (localStorage.getItem("firstTime") === null) {
-        localStorage.setItem("firstTime", "false");
-        prompt("Masukkan nama Kamu");
-        alert(
-          "Selamat datang, " +
-            localStorage.getItem("name") +
-            "apakah kamu sudah membaca buku ini?"
-        );
-      }
-    </script>
     <!-- navbar -->
     <nav class="navbar">
       <div class="container">
