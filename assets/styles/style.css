@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 0;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 20px;
+}
+/* navbar */
+.navbar {
+  padding: 20px 0;
+  background-color: #425f57;
+  /* shadow medium */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  color: white;
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+.navbar__logo {
+  overflow: auto;
+}
+
+.navbar__logo .logo {
+  text-align: right;
+  float: left;
+  width: 45%;
+}
+
+.navbar__logo h1 {
+  text-align: left;
+  float: right;
+  width: 55%;
+}
+
+.main {
+  width: 40%;
+  float: left;
+  padding: 20px;
+  overflow: auto;
+  padding-right: 10px;
+}
+
+aside {
+  padding: 20px;
+  padding-left: 10px;
+  float: right;
+  width: 60%;
+  overflow: auto;
+}
+
+.input_section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input,
+.input_inline {
+  padding-top: 10px;
+}
+.input_section > h2 {
+  text-align: center;
+  color: #425f57;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: #425f57;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+button .cancel {
+  background-color: white;
+  color: #425f57;
+  border: 2px solid #425f57;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.input_section > form > .input > label {
+  color: #425f57;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #425f57;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search_section {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.search_section > h2 {
+  color: #425f57;
+}
+
+.search_section > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > label {
+  display: flex;
+  align-items: center;
+  color: #425f57;
+  font-weight: bold;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.search_section > form > button {
+  background-color: #425f57;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.book_shelf > h2 {
+  color: #425f57;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #425f57;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: #425f57;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .outline {
+  background-color: white;
+  color: #425f57;
+  border: 1px solid #425f57;
+}
+
+.before {
+  float: left;
+  width: 49%;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  background-color: white;
+}
+
+.after {
+  float: right;
+  width: 49%;
+  padding: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+  background-color: white;
+}
+
+.input input,
+.search_section input {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #749f82;
+  border-radius: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* membuat navbar__logo .logo dan navbar__logo h1 berada di tengah saat tampilan mobile */
+@media screen and (max-width: 768px) {
+  .navbar__logo .logo {
+    text-align: right;
+    float: left;
+    width: 35%;
+  }
+
+  .navbar__logo h1 {
+    text-align: left;
+    float: right;
+    width: 65%;
+  }
+}
+
+/* footer */
+footer {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: #425f57;
+  margin-top: 0;
+}
+
+/* saat hover ada shadow */
+button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* saat active shadow hilang */
+button:active {
+  box-shadow: none;
+}
+
+/* membuat input_section dan aside berada di bawah navbar saat tampilan tablet */
+@media screen and (max-width: 1224px) {
+  .input_section,
+  aside {
+    margin-top: 0;
+  }
+  /* agar button bookshelf responsive */
+  .book_shelf > .book_list > .book_item > .action > button {
+    margin: 0 5px 5px 0;
+  }
+}
+
+/* membuat input_section dan aside berada di bawah navbar saat tampilan mobile */
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    float: none;
+    padding: 20px;
+  }
+
+  aside {
+    width: 100%;
+    float: none;
+  }
+
+  .before,
+  .after {
+    width: 100%;
+    float: none;
+  }
+
+  aside {
+    padding-left: 20px;
+  }
+}
